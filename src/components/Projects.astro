@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content'
+import ProjectLink from './ProjectLink.astro'
+
+const projects = await getCollection('projects')
+---
+<aside class="lg:space-y-14 space-y-6 lg:w-4/5 sm:w-10/12 sm:mt-12">
+    {
+        projects.map((project) => (
+            <ProjectLink
+                title={project.data.title}
+                description={project.data.description}
+                link={project.data.link}
+                cta={project.data.cta}
+            />
+        ))
+    }
+</aside>

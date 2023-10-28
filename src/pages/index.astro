@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro'
 import Socials from '../components/Socials.astro'
+import Projects from '../components/Projects.astro'
 ---
 <SiteLayout>
 
@@ -16,6 +17,7 @@ import Socials from '../components/Socials.astro'
 					Web <a href="https://github.com/lennyaiko" target="_blank"><strong>developer</strong></a> &bull; 
 					Technical <a href="https://lennyaiko.hashnode.dev" target="_blank"><strong>writer</strong></a>
 				</p>
+				<div class="w-full h-[0.5px] m-1 bg-gray-200/30 lg:hidden md:hidden"></div>
 				<p class="lg:text-lg">
 					Helping develops learn more about Indie hacking, Open-source and Web development. Building my competence by learning, applying my knowledge and sharing.
 				</p>
@@ -37,6 +39,9 @@ import Socials from '../components/Socials.astro'
 				/>
 			</div>
 		</section>
+
+		<Projects />
+
 	</main>
 
 </SiteLayout>
