@@ -1,6 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
 import Nav from '../components/Nav.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 import {SITE_TITLE, SITE_DESCRIPTION} from '../config'
 ---
 <!DOCTYPE html>
@@ -10,7 +12,11 @@ import {SITE_TITLE, SITE_DESCRIPTION} from '../config'
 	</head>
 	<body class="text-gray-200 bg-slate-800">
 
+		<Header />
+
 		<slot />
+
+		<Footer />
 
 		<Nav />
 
