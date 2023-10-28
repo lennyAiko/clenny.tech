@@ -1,0 +1,18 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Nav from '../components/Nav.astro'
+import {SITE_TITLE, SITE_DESCRIPTION} from '../config'
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="text-gray-200 bg-slate-800">
+
+		<slot />
+
+		<Nav />
+
+	</body>
+</html>
