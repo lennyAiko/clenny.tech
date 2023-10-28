@@ -1,6 +1,6 @@
 {
-    "title": "Git-orca (Python)",
-    "description": "A CLI tool to help you fetch issues or PR from any repo. You can store in json or txt file.",
-    "link": "https://github.com/lennyAiko/git-orca-python",
-    "cta": "Use git-orca now!"
+  "title": "Git-orca (Python)",
+  "description": "A CLI tool to help you fetch issues or PR from any repo. You can store in json or txt file.",
+  "link": "https://github.com/lennyAiko/git-orca-python",
+  "cta": "Use git-orca now!"
 }
