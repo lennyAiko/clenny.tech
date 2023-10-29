@@ -1,47 +1,52 @@
 ---
-import SiteLayout from '../layouts/SiteLayout.astro'
-import Socials from '../components/Socials.astro'
-import Projects from '../components/Projects.astro'
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Socials from "../components/Socials.astro";
+import Projects from "../components/Projects.astro";
 ---
+
 <SiteLayout>
+  <main
+    class="min-h-screen px-4 sm:px-10 lg:mt-10 lg:mx-auto lg:w-8/12 xl:w-1/2"
+  >
+    <section class="sm:flex lg:items-center sm:space-x-4 lg:mb-10">
+      <div>
+        <h1 class="lg:text-3xl text-2xl font-extrabold">Hello, I'm Lennox!</h1>
+        <p class="mb-2 lg:text-lg">
+          Open-source <a href="/projects"><strong>contributor</strong></a>
+          &bull; Indie <a href="/projects"><strong>hacker</strong></a> &bull;
+          Web <a href="https://github.com/lennyaiko" target="_blank"
+            ><strong>developer</strong></a
+          > &bull; Technical <a
+            href="https://lennyaiko.hashnode.dev"
+            target="_blank"><strong>writer</strong></a
+          >
+        </p>
+        <div class="w-full h-[0.5px] m-1 bg-gray-200/30 lg:hidden md:hidden">
+        </div>
+        <p class="lg:text-lg">
+          Helping developers learn more about Indie hacking, Open-source and Web
+          development. Building my competence by learning, applying my knowledge
+          and sharing.
+        </p>
+        <section class="my-4 space-y-3">
+          <h3 class="lg:text-3xl text:2xl font-extrabold">
+            Connect with Lennox
+          </h3>
+          <Socials />
+        </section>
+      </div>
+      <div class="px-16 my-10 sm:my-0 sm:px-0 sm:flex-auto">
+        <img
+          src="/lcc.png"
+          alt="A picture of Lennox C. Charles"
+          height={700}
+          width={700}
+          loading="lazy"
+          class="rounded-md w-full sm:w-72 lg:w-96 lg:h-60 sm:object-cover"
+        />
+      </div>
+    </section>
 
-<main class="min-h-screen px-4 sm:px-10 lg:mt-10 lg:mx-auto lg:w-8/12 xl:w-1/2">
-		<section class="sm:flex lg:items-center sm:space-x-4 lg:mb-10">
-			<div>
-				<h1 class="lg:text-3xl text-2xl font-extrabold">
-					Hello, I'm Lennox!
-				</h1>
-				<p class="mb-2 lg:text-lg">
-					Open-source <a href="/projects"><strong>contributor</strong></a> &bull; 
-					Indie <a href="/projects"><strong>hacker</strong></a> &bull; 
-					Web <a href="https://github.com/lennyaiko" target="_blank"><strong>developer</strong></a> &bull; 
-					Technical <a href="https://lennyaiko.hashnode.dev" target="_blank"><strong>writer</strong></a>
-				</p>
-				<div class="w-full h-[0.5px] m-1 bg-gray-200/30 lg:hidden md:hidden"></div>
-				<p class="lg:text-lg">
-					Helping developers learn more about Indie hacking, Open-source and Web development. Building my competence by learning, applying my knowledge and sharing.
-				</p>
-				<section class="my-4 space-y-3">
-					<h3 class="lg:text-3xl text:2xl font-extrabold">
-						Connect with Lennox
-					</h3>
-					<Socials />
-				</section>
-			</div>
-			<div class="px-16 my-10 sm:my-0 sm:px-0 sm:flex-auto">
-				<img 
-					src="/lcc.png"
-					alt="A picture of Lennox C. Charles"
-					height={700}
-					width={700}
-					loading="lazy"
-					class="rounded-md w-full sm:w-72 lg:w-96 lg:h-60 sm:object-cover"
-				/>
-			</div>
-		</section>
-
-		<Projects />
-
-	</main>
-
+    <Projects />
+  </main>
 </SiteLayout>
