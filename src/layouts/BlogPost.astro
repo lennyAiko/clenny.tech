@@ -1,0 +1,75 @@
+---
+import SiteLayout from "./SiteLayout.astro";
+
+export interface Props {
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+  };
+}
+
+const {
+  content: { title, description, pubDate, updatedDate },
+} = Astro.props;
+
+const tweetText = `Just read this article, "${title}" by @c_lennyx \n`;
+const tweetUrl = `https://twitter.com/intent/tweet?url=${
+  Astro.url
+}&text=${encodeURIComponent(tweetText)}`;
+const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
+  String(Astro.url)
+)}`;
+---
+
+<SiteLayout title={title} description={description}>
+  <main
+    class="min-h-screen p-4 sm:mx-auto lg:mx-auto lg-w-8/12 xl:w-1/2 sm:w-10/12 m:p-10 lg:p-10 text-gray-200"
+  >
+    <p class="mb-8">
+      <a href="/blog" class="hover:text-purple-100">← Back to blog</a>
+    </p>
+
+    <p class="text-sm text-gray-300 flex flex-col">
+      {pubDate && <time>{pubDate}</time>}
+      {
+        updatedDate && (
+          <span class="text-gray-300">
+            Last updated on <time>{updatedDate}</time>
+          </span>
+        )
+      }
+    </p>
+
+    <article
+      class="prose text-gray-200 prose-a:text-gray-200 prose-headings:text-gray-200 prose-blockquote:text-gray-200 prose-strong:text-gray-200 prose-ul:text-gray-200 prose-table:text-gray-200 lg:prose-lg prose-md prose-a:no-underline prose-a:only:font-semibold prose-a:border prose-a:border-transparent prose-a:border-b-purple-100 hover:prose-a:text-purple-100 prose-code:before:content-none prose-code:after:content-none prose-code:text-purple-100"
+    >
+      <h1 class="">{title}</h1>
+
+      <slot />
+    </article>
+
+    <aside class="mt-8 p">
+      <ul class="text-purple-100 font-extrabold flex justify-center space-x-4">
+        <li>
+          <a
+            class="hover:underline focus:outline-none"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={tweetUrl}>Tweet this article</a
+          >
+        </li>
+
+        <li>
+          <a
+            class="hover:underline focus:outline-none"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={twitterSearchUrl}>Discuss on Twitter</a
+          >
+        </li>
+      </ul>
+    </aside>
+  </main>
+</SiteLayout>
