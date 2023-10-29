@@ -1,0 +1,61 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { getCollection } from "astro:content";
+
+const articles = (await getCollection("articles")).sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+);
+---
+
+<SiteLayout
+  title="Lennox C. Charles Articles"
+  description={`I've written over ${articles.length} articles on hashnode and other platforms.`}
+>
+  <main class="mx-auto pb-20 sm:px-6 md:px-8 xl:px-12 lg:max-w-3xl">
+    <header class="lg:py-10 sm:py-12 py-4 sm:text-center mx-4">
+      <p class="lg:text-xl text-lg text-gray-300">
+        I've written over <strong>{articles.length}</strong> articles on <strong
+          >Hashnode</strong
+        > and other platforms.
+      </p>
+    </header>
+    <section>
+      <ul>
+        {
+          articles.map((article) => (
+            <a href={article.data.url} target="_blank">
+              <li class="mb-4 grid grid-cols-1 rounded-md px-4 py-2 hover:bg-purple-100/10 focus:bg-purple-100/10 sm:flex sm:grid-cols-2 sm:item-center sm:py-4 items-center">
+                <p class="sm:w-32">
+                  <time class="text-gray-300" datetime={article.data.date}>
+                    {new Date(article.data.date).toLocaleDateString("en-us", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </time>
+                </p>
+                <section class="">
+                  <h3 class="text-lg font-semibold tracking-tight text-gray-200 sm:pt-0">
+                    {article.data.title}
+                  </h3>
+                  <p class="prose text-gray-200 line-clamp-2">
+                    {article.data.excerpt}
+                  </p>
+                  <span>
+                    <a
+                      class="text-md underline font-semibold text-purple-100"
+                      target="_blank"
+                      href={article.data.url}
+                    >
+                      Read on {article.data.publication} &rsaquo;
+                    </a>
+                  </span>
+                </section>
+              </li>
+            </a>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</SiteLayout>
