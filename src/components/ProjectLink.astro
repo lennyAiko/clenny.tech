@@ -1,21 +1,26 @@
 ---
 export interface Props {
-    title: string
-    description: string
-    link: string
-    cta: string
+  title: string;
+  description: string;
+  link: string;
+  cta: string;
 }
 
-const { title, description, link, cta } = Astro.props
+const { title, description, link, cta } = Astro.props;
 ---
+
 <section class="my-4">
-    <h3 class="sm:text-3xl text-2xl font-extrabold">
-        {title}
-    </h3>
-    <p class="sm:text-lg">
-        {description}
-    </p>
-    <a href={link} target="_blank" class="border border-transparent border-b-purple-100 lg:text-lg font-semibold">
-        {cta}
-    </a>
+  <h3 class="sm:text-3xl text-2xl font-extrabold">
+    {title}
+  </h3>
+  <p class="sm:text-lg">
+    {description}
+  </p>
+  <a
+    href={link}
+    target="_blank"
+    class="border border-transparent border-b-purple-100 lg:text-lg font-semibold"
+  >
+    {cta}
+  </a>
 </section>

@@ -1,17 +1,18 @@
 ---
-import { getCollection } from 'astro:content'
-import SocialLink from './SocialLink.astro'
+import { getCollection } from "astro:content";
+import SocialLink from "./SocialLink.astro";
 
-const socials = await getCollection('socials')
+const socials = await getCollection("socials");
 ---
+
 <ul class="flex items-center space-x-2">
-    {
-        socials.map((social) => (
-            <SocialLink 
-                link={social.data.link}
-                icon={social.data.icon}
-                title={social.data.title}
-            />
-        ))
-    }
+  {
+    socials.map((social) => (
+      <SocialLink
+        link={social.data.link}
+        icon={social.data.icon}
+        title={social.data.title}
+      />
+    ))
+  }
 </ul>
