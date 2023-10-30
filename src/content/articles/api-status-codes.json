@@ -1,0 +1,8 @@
+{
+  "title": "API Status codes and some categories",
+  "url": "https://lennyaiko.hashnode.dev/api-status-codes-and-some-categories",
+  "excerpt": "A server responds to a request from a client by returning a status code. They are used in all responses and have a number from 200 to 507 - with a lot of gaps in between - and each one of the codes has a message and a definition.",
+  "publication": "Hashnode",
+  "date": "January 13, 2023"
+}
+
