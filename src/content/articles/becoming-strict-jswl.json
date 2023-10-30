@@ -1,0 +1,7 @@
+{
+  "title": "Becoming strict in JS 🤨",
+  "url": "https://lennyaiko.hashnode.dev/becoming-strict-in-js",
+  "excerpt": "JS was designed to be simple, and for that reason, operations that should cause an error are forgiven. While this solves the immediate problem, it could create worse problems in the future.",
+  "publication": "Hashnode",
+  "date": "July 8, 2023"
+}
