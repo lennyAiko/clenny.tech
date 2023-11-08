@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://clenny.tech',
-  integrations: [tailwind(), mdx(), sitemap()]
+  site: "https://clenny.tech",
+  integrations: [tailwind(), mdx(), sitemap()],
 });
