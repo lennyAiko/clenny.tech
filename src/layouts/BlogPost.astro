@@ -7,6 +7,7 @@ export interface Props {
     description: string;
     pubDate?: string;
     updatedDate?: string;
+    heroImage?: string;
   };
 }
 
@@ -14,7 +15,7 @@ const {
   content: { title, description, pubDate, updatedDate },
 } = Astro.props;
 
-const tweetText = `Just read this article, "${title}" by @c_lennyx \n`;
+const tweetText = `I just read this article, "${title}" by @c_lennyx \n`;
 const tweetUrl = `https://twitter.com/intent/tweet?url=${
   Astro.url
 }&text=${encodeURIComponent(tweetText)}`;
