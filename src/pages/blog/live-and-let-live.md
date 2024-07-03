@@ -9,7 +9,7 @@ One thing most people know how to do is to 'give'. Be it love, material possessi
 
 What many don't recognize is, sometimes we get so used to giving that we forget to receive; and when we do receive, we don't completely feel worth it or like we deserve it.
 
-For years I have experienced and I always told myself that whatever gift I received I would work hard to be worth it cause I didn't feel like I deserved it or like I could receive something like that again.
+For years I have experienced this and I always told myself that whatever gift I received I would work hard to be worth it cause I didn't feel like I deserved it or like I could receive something like that again.
 
 It took me sometime to realize that everything I receive is because I deserved it, either from the seeds I have sown or from someone who wants to sow a seed. I no longer feel like I need to work so hard for good things to come to me.
 
