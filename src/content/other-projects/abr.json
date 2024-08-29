@@ -1,7 +1,7 @@
 {
   "title": "Africa Business Radio",
-  "description": "Ih-wiki is an open-source collaborative knowledge base for Indie Hackers. You are free to contribute your knowledge, experience and insights in the realm of indie hacking.",
-  "link": "https://ihwiki.netlify.app/",
+  "description": "Africa Business Radio is an online radio station which broadcast on a daily basis, via live or uploaded. I built the backend system of this project. Key feature: Automatically fetching new podcasts from the platform the podcasts was hosted via RSS feed.",
+  "link": "https://africabusinessradio.com/",
   "cta": "Check it out!",
   "img": "/projects/abr.png"
 }
