@@ -1,0 +1,7 @@
+{
+  "title": "Jolly Podcast",
+  "description": "A mobile podcast application for GLO internet service provider. Users subscribe to the platform either from text message or ussd, then they are able to listen to glo podcasts. I built the backend system of this project.",
+  "link": "#",
+  "cta": "Check it out!",
+  "img": "/projects/jollycast.png"
+}

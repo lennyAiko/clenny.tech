@@ -1,6 +1,6 @@
 {
   "title": "Africa Business Radio",
-  "description": "Africa Business Radio is an online radio station which broadcast on a daily basis, via live or uploaded. I built the backend system of this project. Key feature: Automatically fetching new podcasts from the platform the podcasts was hosted via RSS feed.",
+  "description": "Africa Business Radio is an online radio station which broadcast on a daily basis, via live or uploaded. Admin and listener section available. I built the backend system of this project. Key feature: Automatically fetching new podcasts from the platform the podcasts was hosted via RSS feed.",
   "link": "https://africabusinessradio.com/",
   "cta": "Check it out!",
   "img": "/projects/abr.png"
