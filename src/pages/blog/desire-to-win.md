@@ -5,6 +5,8 @@
  pubDate: '3 January, 2025'
 ---
 
+![desire](/desire.png)
+
 As simple as this sounds, it is also an important piece between performing at a level 5 and performing at a level 12.
 
 Desire has been a major fuel for performance, how much you desire an outcome will always determine the amount of pressure or effort you put in.
