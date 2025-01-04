@@ -5,15 +5,15 @@
  pubDate: '3 January, 2025'
 ---
 
-As simple as this sounds, it is a missing piece between performing at a level 5 and performing at a level 12.
+As simple as this sounds, it is also an important piece between performing at a level 5 and performing at a level 12.
 
 Desire has been a major fuel for performance, how much you desire an outcome will always determine the amount of pressure or effort you put in.
 
-Imagine a race car with no steering wheel, it would go so fast that it would crash because it is not being directed by the steering wheel. The same principle applies with a desire with no direction.
+Imagine a race car with no steering wheel, it would go so fast that it would crash because it is not being directed by the steering wheel. The same principle applies to a desire with no direction.
 
-You have probably heard alot of folks - you might also fall in this category - who decides to do something because they have a desire for it but after a week or two they stop with enough excuses as reasons for stopping.
+You have probably heard alot of folks - you might also fall in this category - who decides to do something because they have a desire for it but after a week or two they stop with enough excuses to justify their decision for stopping.
 
-This sums up to the point that they had a desire but it had no direction, hence the reason for this article "Desire to win". This article is to help you give direction to the desires you may have now or that are to come in the nearest future.
+This sums up to the point that they had a desire but it had no direction, hence the reason for this article "Desire to win". This article is to give direction to the desires you may have now or that are to come in the nearest future.
 
 Hold on! This is not rocket science or a philosophy class, these are simple steps for you to apply to what you are currently chasing after or will chase after. Let's get to it.
 
@@ -35,4 +35,6 @@ This phase will get boring sometimes but enjoy the boredom, it is part of the pr
 
 ## Conclusion
 
-This is basically a cheatsheet for you to move from a level 5 performance to a level 12 performance.
+This is basically a cheatsheet for you to move from a level 5 performance to a level 12 performance. Just by simply applying these basic principles can immensely affect your performance. Now this is not a one size fits all, check if it matches your use case before applying them. Keep in mind that good things take time, but with time and determination you can always achieve.
+
+See you on the next one.
