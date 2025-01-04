@@ -21,6 +21,8 @@ Hold on! This is not rocket science or a philosophy class, these are simple step
 
 Understanding how things work in your environment is a great place to start. This way you are able to know what target to set and if available, your competitors.
 
+It is possible to also notice a thing or two in your environment that can either support or fuel your desire.
+
 2. **Set your target to conquer**.
 
 Now that you have a clear picture of your environment, you can set your target to conquer. This is what you want to do and how you want to do it.
@@ -33,8 +35,12 @@ You have studied your environment and set your target to conquer. Now it is time
 
 This phase will get boring sometimes but enjoy the boredom, it is part of the process of conquering your target. One may say there are more benefits and results from doing the boring stuff.
 
+To "desire to win" goes beyond just wanting to make the outcome possible, it takes sacrifice. You will need to not negotiate the sacrifice you need to make to for your desired outcome to become a reality.
+
 ## Conclusion
 
-This is basically a cheatsheet for you to move from a level 5 performance to a level 12 performance. Just by simply applying these basic principles can immensely affect your performance. Now this is not a one size fits all, check if it matches your use case before applying them. Keep in mind that good things take time, but with time and determination you can always achieve.
+This is basically a cheatsheet for you to move from a level 5 performance to a level 12 performance. Just by simply applying these basic principles can immensely affect your performance. 
+
+Now this is not a one size fits all, check if it matches your use case before applying them. Keep in mind that good things take time, but with time and determination you can always achieve.
 
 See you on the next one.
