@@ -45,4 +45,6 @@ This is basically a cheatsheet for you to move from a level 5 performance to a l
 
 Now this is not a one size fits all, check if it matches your use case before applying them. Keep in mind that good things take time, but with time and determination you can always achieve.
 
+What drives your "desire to win"? Let me know by reaching out!
+
 See you on the next one.
