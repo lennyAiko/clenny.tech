@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://clenny.tech",
+  site: "https://clenny.netlify.app",
   integrations: [tailwind(), mdx(), sitemap()],
 });
