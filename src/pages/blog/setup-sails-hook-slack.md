@@ -1,6 +1,6 @@
 ---
  layout: '../../layouts/BlogPost.astro'
- title: 'Send your Sails log to slack'
+ title: 'How to monitor your Sails application with Slack.'
  description: 'A simple Sails hook to help you send messages to slack from your Sails application. It also comes with a helper function to send messages directly to slack without necessary logging it.'
  pubDate: '14 February, 2025'
 ---
