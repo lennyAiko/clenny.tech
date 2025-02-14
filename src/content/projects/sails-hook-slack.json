@@ -1,0 +1,6 @@
+{
+  "title": "Sails-hook-slack",
+  "description": "A simple Sails hook to help you send messages to slack from your Sails application. t also comes with a helper function to send messages directly to slack without necessary logging it.",
+  "link": "https://github.com/lennyAiko/sails-hook-slack",
+  "cta": "Check it out!"
+}
