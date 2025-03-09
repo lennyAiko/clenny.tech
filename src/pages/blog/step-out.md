@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "Step Out"
-description: ""
+description: "To make a change does not necessarily mean to add something new, sometimes you need to subtract."
 pubDate: "7 March, 2025"
 ---
 
