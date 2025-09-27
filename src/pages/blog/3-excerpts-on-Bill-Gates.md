@@ -7,7 +7,7 @@
 
 After some research - listening to audios and reading books - I decided to write about 3 excerpts from my notes on how Bill Gates work.
 
-Before I dive into the excerpts a something to have in mind about Bill Gates - before you go on to apply them - is that he spoke about his success like it was a given. He was so certain it will happen and nothing could change it.
+Before I dive into the excerpts, something you need to have in mind about Bill Gates - before you go on to apply them - is that he spoke about his success like it was a given. He was so certain it will happen and nothing could change it.
 
 He was fanatical and obssessed with his work that he was seldom distracted from what he was working on. He always believed in continuously pushing himself to the limit and never giving up.
 
