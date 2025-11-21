@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://clenny.netlify.app/sitemap-index.xml
