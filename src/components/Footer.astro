@@ -2,36 +2,70 @@
 import Socials from "./Socials.astro";
 ---
 
-<>
- <script src="https://tinylytics.app/embed/WDGdSntNWd8h8DSSaoz7.js" defer></script> 
-<footer class="text-center p-4 flex flex-col items-center mb-5">
-  <a
-    href="https://twitter.com/c_lennyx"
-    target="_blank"
-    class="underline text-gray-200 font-semibold">@c_lennyx</a
-  >
-  <p>
-    <span
-      >Built with
-      <a class="text-purple-100" href="https://astro.build" target="_blank"
-        >Astro</a
+<footer class="mt-20 border-t border-gray-800/60 pb-12 pt-10">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+      <div class="flex flex-col items-center md:items-start">
+        <a
+          href="https://twitter.com/c_lennyx"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex items-center space-x-2 text-sm font-semibold text-gray-200 transition-colors hover:text-purple-400"
+        >
+          <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            ></path>
+          </svg>
+          <span>@c_lennyx</span>
+        </a>
+        <p class="mt-2 text-xs text-gray-500">
+          &copy; {new Date().getFullYear()} Lennox C. Charles. All rights
+          reserved.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs font-medium text-gray-400 md:justify-end"
       >
-    </span> &bull;
-    <span
-      >Styling with
-      <a class="text-purple-100" href="https://tailwindcss.com" target="_blank"
-        >Tailwind CSS</a
-      >
-    </span> &bull;
-    <span
-      >Hosted on
-      <a class="text-purple-100" href="https://netlify.com" target="_blank"
-        >Netlify</a
-      >
-    </span>
-  </p>
-  <section class="mt-4">
-    <Socials />
-  </section>
+        <span class="flex items-center">
+          Built with <a
+            href="https://astro.build"
+            target="_blank"
+            class="ml-1 text-gray-200 hover:text-purple-400 transition-colors"
+            >Astro</a
+          >
+        </span>
+        <span
+          class="hidden h-1 w-1 rounded-full bg-gray-700 md:block self-center"
+        ></span>
+        <span class="flex items-center">
+          Styled by <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            class="ml-1 text-gray-200 hover:text-purple-400 transition-colors"
+            >Tailwind</a
+          >
+        </span>
+        <span
+          class="hidden h-1 w-1 rounded-full bg-gray-700 md:block self-center"
+        ></span>
+        <span class="flex items-center">
+          Deployed on <a
+            href="https://netlify.com"
+            target="_blank"
+            class="ml-1 text-gray-200 hover:text-purple-400 transition-colors"
+            >Netlify</a
+          >
+        </span>
+      </div>
+
+      <div class="order-first md:order-last">
+        <Socials />
+      </div>
+    </div>
+  </div>
+
+  <script src="https://tinylytics.app/embed/WDGdSntNWd8h8DSSaoz7.js" defer
+  ></script>
 </footer>
-</>

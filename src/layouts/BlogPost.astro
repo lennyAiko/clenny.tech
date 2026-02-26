@@ -15,62 +15,103 @@ const {
   content: { title, description, pubDate, updatedDate },
 } = Astro.props;
 
-const tweetText = `I just read this article, "${title}" by @c_lennyx \n`;
+// Formatting the date more elegantly
+const formattedDate = pubDate
+  ? new Date(pubDate).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  : "";
+
+const tweetText = `I just read "${title}" by @c_lennyx`;
 const tweetUrl = `https://twitter.com/intent/tweet?url=${
   Astro.url
 }&text=${encodeURIComponent(tweetText)}`;
 const twitterSearchUrl = `https://twitter.com/search?q=${encodeURI(
-  String(Astro.url)
+  String(Astro.url),
 )}`;
 ---
 
 <SiteLayout title={title} description={description}>
-  <main
-    class="min-h-screen p-4 sm:mx-auto lg:mx-auto lg-w-8/12 xl:w-1/2 sm:w-10/12 m:p-10 lg:p-10 text-gray-200"
-  >
-    <p class="mb-8">
-      <a href="/blog" class="hover:text-purple-100">← Back to blog</a>
-    </p>
+  <main class="mx-auto max-w-2xl px-6 pt-16 pb-24 sm:pt-24 lg:px-8">
+    <nav class="mb-8">
+      <a
+        href="/blog"
+        class="group inline-flex items-center text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors"
+      >
+        <svg
+          class="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"></path>
+        </svg>
+         Back to blog
+      </a>
+    </nav>
 
-    <p class="text-sm text-gray-300 flex flex-col">
-      {pubDate && <time>{pubDate}</time>}
-      {
-        updatedDate && (
-          <span class="text-gray-300">
-            Last updated on <time>{updatedDate}</time>
-          </span>
-        )
-      }
-    </p>
+    <header class="flex flex-col space-y-4 mb-12">
+      <div class="flex items-center space-x-2 text-sm text-gray-500">
+        {pubDate && <time datetime={pubDate}>{formattedDate}</time>}
+        {
+          updatedDate && (
+            <span class="flex items-center">
+              <span class="mx-2">·</span>
+              <span class="italic text-gray-600">Updated {updatedDate}</span>
+            </span>
+          )
+        }
+      </div>
+      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+        {title}
+      </h1>
+      <p class="text-xl text-gray-400 leading-8">
+        {description}
+      </p>
+    </header>
 
     <article
-      class="prose text-gray-200 prose-a:text-gray-200 prose-headings:text-gray-200 prose-blockquote:text-gray-200 prose-strong:text-gray-200 prose-ul:text-gray-200 prose-table:text-gray-200 lg:prose-lg prose-md prose-a:no-underline prose-a:only:font-semibold prose-a:border prose-a:border-transparent prose-a:border-b-purple-100 hover:prose-a:text-purple-100 prose-code:before:content-none prose-code:after:content-none prose-code:text-purple-100"
+      class="prose prose-invert max-w-none
+      prose-headings:text-white prose-headings:font-bold
+      prose-p:text-gray-300 prose-p:leading-7
+      prose-a:text-purple-400 prose-a:no-underline hover:prose-a:underline
+      prose-code:text-purple-200 prose-code:bg-purple-500/10 prose-code:px-1 prose-code:rounded
+      prose-blockquote:border-l-purple-500 prose-blockquote:bg-gray-900/50 prose-blockquote:py-1 prose-blockquote:px-6
+      prose-img:rounded-xl"
     >
-      <h1 class="">{title}</h1>
-
       <slot />
     </article>
 
-    <aside class="mt-8 p">
-      <ul class="text-purple-100 font-extrabold flex justify-center space-x-4">
-        <li>
-          <a
-            class="hover:underline focus:outline-none"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={tweetUrl}>Tweet this article</a
-          >
-        </li>
+    <footer class="mt-16 pt-8 border-t border-gray-800">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+        <p class="text-gray-400 text-sm">Thanks for reading!</p>
 
-        <li>
+        <div class="flex items-center space-x-6">
           <a
-            class="hover:underline focus:outline-none"
+            class="text-sm font-semibold text-purple-400 hover:text-purple-300 transition-colors"
             target="_blank"
             rel="noreferrer noopener"
-            href={twitterSearchUrl}>Discuss on Twitter</a
+            href={tweetUrl}
           >
-        </li>
-      </ul>
-    </aside>
+            Share on X
+          </a>
+          <span class="h-1 w-1 rounded-full bg-gray-700"></span>
+          <a
+            class="text-sm font-semibold text-purple-400 hover:text-purple-300 transition-colors"
+            target="_blank"
+            rel="noreferrer noopener"
+            href={twitterSearchUrl}
+          >
+            Discuss
+          </a>
+        </div>
+      </div>
+    </footer>
   </main>
 </SiteLayout>
